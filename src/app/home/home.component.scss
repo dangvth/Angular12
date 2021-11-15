@@ -2,5 +2,22 @@
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px red;
-    width: 400px;
+    min-width: 400px;
+}
+
+.table, td, th {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.negative {
+    color: red;
+}
+
+.right {
+    text-align: right;
 }

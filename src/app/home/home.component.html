@@ -1,7 +1,22 @@
 <div class="example">
     <h3>Đây là component Home</h3>
     <h2>Trái cây</h2>
-    <div *ngFor="let fruit of fruits; let i = index">
-        <li>{{ i + 1 }}. {{ fruit }}</li>
-    </div>
+    <table id="table">
+        <tr>
+          <th>Thứ tự</th>
+          <th>Tên</th>
+          <th>Giá</th>
+          <th>Khuyến mãi</th>
+        </tr>
+        <tr *ngFor="let fruit of fruits; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ fruit.name }}</td>
+          <td class="right">
+            <span [ngClass]="{ 'negative': fruit.price < 0 }">{{ fruit.price }}</span>
+          </td>
+          <td>
+            <span *ngIf="fruit.sale">Đang khuyến mãi</span>
+          </td>
+        </tr>
+      </table>
 </div>
