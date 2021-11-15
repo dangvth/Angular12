@@ -1,7 +1,7 @@
 <div class="example">
     <h3>Đây là component Home</h3>
-    <h2>Trái cây</h2>
-    <table id="table">
+    <h2>Địa chỉ</h2>
+    <!-- <table id="table">
         <tr>
           <th>Thứ tự</th>
           <th>Tên</th>
@@ -18,5 +18,17 @@
             <span>{{ fruit.sale | onSale | uppercase }}</span>
           </td>
         </tr>
-      </table>
+    </table> -->
+    Tỉnh/Thành phố:
+    <select id="city" (change)="changeCity($event)">
+        <option *ngFor="let data of datas" value="{{ data.city }}">
+            {{ data.city }}
+        </option>
+    </select>
+    Quận/Huyện:
+    <select id="district">
+        <option *ngFor="let district of districts" value="{{ district }}">
+            {{ district }}
+        </option>
+    </select>
 </div>
