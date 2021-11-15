@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public name = 'Đăng Võ';
+  public fruits= ['Táo', 'Chuối', 'Xoài'];
   
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    console.log('Trái cây: ', this.fruits)
   }
 
 }
