@@ -30,4 +30,9 @@ export class HttpServerService {
     const url = `${this.REST_API_SERVER}/comments/` + id; 
     return this.httpClient.put<any>(url, payload, this.httpOptions);
   }
+
+  public deleteComment(id: number): Observable<any> {
+    const url = `${this.REST_API_SERVER}/comments/` + id; 
+    return this.httpClient.delete<any>(url, this.httpOptions);
+  }
 }

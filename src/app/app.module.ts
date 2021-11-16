@@ -15,6 +15,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
 import { PostDataComponent } from './post-data/post-data.component';
 import { PutDataComponent } from './put-data/put-data.component';
+import { DeleteDataComponent } from './delete-data/delete-data.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PutDataComponent } from './put-data/put-data.component';
     ReactiveFormComponent,
     GetDataComponent,
     PostDataComponent,
-    PutDataComponent
+    PutDataComponent,
+    DeleteDataComponent
   ],
   imports: [
     BrowserModule,
