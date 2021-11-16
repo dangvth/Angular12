@@ -11,7 +11,7 @@ export class GetDataComponent implements OnInit {
   constructor(private httpService: HttpServerService) { }
 
   ngOnInit(): void {
-    this.httpService.getComments().subscribe(data => {
+    this.httpService.getComments().subscribe((data) => {
       console.log('data', data);
     });
   }
