@@ -13,7 +13,7 @@ export class PostDataComponent implements OnInit {
   ngOnInit(): void {
     const payload = { body: "some comment 3", postId: 3 };
     this.httpService.postComment(payload).subscribe((data) =>{
-      console.log('postComment', payload);
+      console.log('postComment', data);
     })
   }
 
