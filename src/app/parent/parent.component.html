@@ -1,0 +1,8 @@
+<h2>Đây là component Parent: </h2>
+<p>{{ message }}</p>
+<br/>
+<button (click)="giveMoney()">Cho con tiền</button>
+<br/>
+<app-child #thangCam name="Cam" (childCall)="sayHello($event)"></app-child>
+<br/>
+<app-child #thangQuyt name="Quýt" (childCall)="sayHello($event)"></app-child>
