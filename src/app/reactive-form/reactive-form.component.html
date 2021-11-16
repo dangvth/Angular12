@@ -1,0 +1,8 @@
+<p>reactive-form works!</p>
+<form [formGroup]="formData" (ngSubmit)="onSubmit()">
+    Name: <input type="text" formControlName="name">
+    <br />
+    Age: <input type="text" formControlName="age">
+    <br />
+    <button type="submit" [disabled]="!formData.valid">Submit</button>
+</form>
